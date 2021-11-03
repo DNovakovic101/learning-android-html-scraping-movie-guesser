@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             numberOfRightAnswers++;
         }
         else {
-            Toast.makeText(MainActivity.this, "WRONG!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "WRONG! It was "+currentRightAnswer, Toast.LENGTH_SHORT).show();
             clickWrong.seekTo(0);
             clickWrong.start();
             colorAnimationWrong.start();
